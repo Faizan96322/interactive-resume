@@ -1,0 +1,246 @@
+/* CSS Reset */
+*{
+    margin:0px;
+    padding:0px;
+}
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position:absolute;
+    height:100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+/* navigation bar: logo and image */
+#logo{
+    margin: 5px 35px;
+    height:70px;
+
+}
+
+#logo img{
+    margin: 4px 15px;
+    width: 78px;
+    height: 63px;
+
+    position: relative;
+        
+    animation-name: faizan;
+    animation-duration: 3s;
+    animation-iteration-count: 2;   
+}
+
+@keyframes faizan {
+    0%{
+        top:0px;
+        left:0px;
+    }
+    25%{
+        top: 50px;
+        left: 0px;
+    }
+    75%{
+        top: 50px;
+        left: 50px;
+    }
+    100%{
+        top: 0px;
+        left: 50px;
+    }
+    
+}
+
+/* navigation bar: list styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 2px 22px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:50px;
+    flex-wrap: wrap;
+
+}
+
+/* Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 197px;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    flex-wrap: wrap;
+}
+
+#home::before{
+    content: "";
+    background: url(../img/bg.jpg);
+    position:absolute;
+    height:60%;
+    width: 100%;
+    left:0px;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+/* home h1 and h4 tag */
+
+#home h1{
+    font-size: 50px;
+    color: rgb(245, 234, 234);
+}
+#home h4{
+    font-size: 30px;
+    color: rgb(240, 207, 207);    
+}
+
+
+/* services section */
+#services{
+    display: flex;
+    margin:0px;
+    height:500px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+}
+#services .box{
+    background-color: rgb(248, 241, 241);
+    padding:30px;
+    margin: 3px;
+    height:290px;
+    width: 237px;
+}
+
+#services .box img{
+    height: 291px;
+    width: 199px;
+}
+
+/* abilities */
+
+.abilities{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* abilities content */
+
+.abilitybox{
+    display: flex;
+    margin:0px;
+    height:800px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+    
+}
+
+.abilitybox .ably{
+    display: flex;  
+    margin:0px;
+    height:500px;
+    width: 24%;   
+}
+
+.abilitybox .ably h2{
+    font-size: 50px;
+    padding:24px;
+    width: 118px;
+}
+
+.abilitybox .ably ul li{
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    list-style: none;
+}
+
+/* contact section  */
+
+.contact{
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 200px;
+}
+
+.contactdets{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 0.9;
+}
+
+.contactdets img{
+    margin: 4px 15px;
+    width: 78px;
+    height: 63px;
+
+}
+
+
+
+
+
+
+/* utility classes */
+.h-primary1{
+    font-size: 3.8rem;
+    padding: 12px;
+    width: 600px;
+}
+
+.h-secondary1{
+    font-size: 2.4rem;
+    padding: 12px;
+
+}
+
+.center{
+    text-align: center;
+}
+
+
+
+
+
+
